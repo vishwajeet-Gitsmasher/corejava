@@ -14,7 +14,7 @@ public class FanDemo {
 		
 		System.out.println("-------------------------------");
 		
-		// Object 2
+		// Object 1
 		Fan usha = new Fan();
 		usha.name = "Usha";
 		usha.coil = "Aluminium";
