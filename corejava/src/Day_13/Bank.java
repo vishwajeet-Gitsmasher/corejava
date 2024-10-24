@@ -25,6 +25,7 @@ public class Bank {
 		} else if (currentBalance - amount < 1000) {
 			System.out.println("Maintain Minimum Balance of 1000.Rs.");
 		} else {
+			currentBalance -=  amount;
 			System.out.println("Transaction Successful.");
 		}
 		currentBalance();
