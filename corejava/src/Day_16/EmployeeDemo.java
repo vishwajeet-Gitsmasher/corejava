@@ -72,16 +72,4 @@ Employee ID : 450
 Employee Salary :70000.0
 Number of Projects : 23
 
-=====================================
-
-Enter Number of Books = 1
-
-Enter Book Title = Ramayan
-Enter Book Author = Walmiki
-Enter Book Price = 200000000
-Enter Discount Percentage = 2
-Book Details
-Book Title : Walmiki
-Book Author : Walmiki
-Book Price : 1.96E8
 */
