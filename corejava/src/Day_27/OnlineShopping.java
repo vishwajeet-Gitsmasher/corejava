@@ -10,7 +10,7 @@ public class OnlineShopping {
 			System.out.println("1. Electronics");
 			System.out.println("2. Clothing");
 			System.out.println("3. Exit");
-			System.out.print("Enter your choice = ");1
+			System.out.print("Enter your choice = ");
 			int choice = sc.nextInt();
 			if(choice == 1) 
 			{
