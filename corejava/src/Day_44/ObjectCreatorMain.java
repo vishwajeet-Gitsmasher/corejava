@@ -11,20 +11,33 @@ public class ObjectCreatorMain{
 		
 		Student student = (Student) CustomObject.create(1,"John doe");
 		System.out.println(student);
-		
 		Consumer<String> nameUpdater = newname -> {
 			student.setName(newname);
 		};
-		
 		student.updateName(nameUpdater);
 		System.out.println(student);
 		
+		System.out.println("=================================================");
+		
 		Student s2 = (Student) CustomObject.create(2,"Alice");
 		System.out.println(s2);
-		s2.updateName(nameUpdater);
+		Consumer<String> nameUpdater1 = newname -> {
+			s2.setName(newname);
+		};
+		s2.updateName(nameUpdater1);
 		System.out.println(s2);
 	}
 }
+
+/*
+Student [id=1, name=John doe]
+John Sharma
+Student [id=1, name=John Sharma]
+=================================================
+Student [id=2, name=Alice]
+Alice Verma
+Student [id=2, name=Alice Verma]
+ */
 
 /*
 Main Class: ObjectCreatorMain
