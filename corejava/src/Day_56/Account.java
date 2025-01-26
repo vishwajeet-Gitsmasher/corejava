@@ -8,7 +8,7 @@ public class Account {
 	public synchronized void withdraw(int amount) {
 		while(this.balance < amount) {
 			try {
-				wait(1000);
+				wait();
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
