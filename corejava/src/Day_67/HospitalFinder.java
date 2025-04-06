@@ -19,9 +19,9 @@ public class HospitalFinder {
 		Hospital h3 = new Hospital("Max",treatment1, "Kusal", "9287362222", "Beg");
 		
 		HospitalService hs = new HospitalService();
-		hs.addHospital(h1);
-		hs.addHospital(h2);
-		hs.addHospital(h3);
+		System.out.println("Hospital with Code : "+hs.addHospital(h1)+" added to the List");
+		System.out.println("Hospital with Code : "+hs.addHospital(h2)+" added to the List");
+		System.out.println("Hospital with Code : "+hs.addHospital(h3)+" added to the List");
 		
 		HashMap<Integer,String> res = hs.getHospitals();
 		Iterator itr = res.entrySet().iterator();
@@ -43,6 +43,9 @@ public class HospitalFinder {
 }
 
 /*
+Hospital with Code : 100 added to the List
+Hospital with Code : 101 added to the List
+Hospital with Code : 102 added to the List
 100=ASHODA
 101=Pristine
 102=Max
